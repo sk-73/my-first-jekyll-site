@@ -1,0 +1,15 @@
+# デプロイしたいディレクトリの設定
+[build]
+  publish = "_site/"
+
+# masterのビルドコマンド
+[context.production]
+  command = "yarn build:production"
+
+# master以外のbranchのビルドコマンド
+[context.branch-deploy]
+  command = "yarn build:staging"
+
+# pull-req作成時のビルドコマンド
+[context.deploy-preview]
+  command = "yarn build:staging"
