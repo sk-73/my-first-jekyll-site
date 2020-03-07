@@ -1,0 +1,17 @@
+encoding: utf-8
+title: my-first-jekyll-site
+defaults:
+  - 
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "index"
+      lang: ja
+      image: ""
+plugins:
+  - jekyll-sitemap
+scss:
+    scss_dir: stylesheets
+    destination: css
+    style: compressed
